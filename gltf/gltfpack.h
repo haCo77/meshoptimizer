@@ -282,7 +282,7 @@ void mergeMeshes(std::vector<Mesh>& meshes, const Settings& settings);
 void filterEmptyMeshes(std::vector<Mesh>& meshes);
 void filterStreams(Mesh& mesh, const MaterialInfo& mi);
 
-void mergeMeshMaterials(cgltf_data* data, std::vector<Mesh>& meshes, const Settings& settings);
+void mergeMeshMaterials(cgltf_data* data, std::vector<Mesh>& meshes, const Settings& settings, const std::string& extras);
 void markNeededMaterials(cgltf_data* data, std::vector<MaterialInfo>& materials, const std::vector<Mesh>& meshes, const Settings& settings);
 
 bool hasValidTransform(const cgltf_texture_view& view);
